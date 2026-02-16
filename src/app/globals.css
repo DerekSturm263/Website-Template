@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --background: rgb(195, 195, 195);
+  --foreground: rgb(0, 0, 0);
+  --header: rgb(235, 235, 235);
+  --text: rgb(255, 255, 255);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lexend);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(20, 20, 20);
+    --foreground: rgb(255, 255, 255);
+    --header: rgb(60, 60, 60);
+    --text: rgb(0, 0, 0);
+  }
+}
